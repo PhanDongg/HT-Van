@@ -1,0 +1,13 @@
+<section class="content-block content-block--archive">
+  <header class="content-block__header">
+    <h1 class="content-block__title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="content-block__meta">{{ page.description }}</p>
+    {% endif %}
+  </header>
+  <div class="product-grid">
+    {% for product in site.data.products.catalog %}
+      {% include ecom/loop/product.html product=product %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,19 @@
+title: HT Van
+description: Theme scaffold for the HT Van homepage build.
+lang: vi
+timezone: Asia/Saigon
+permalink: pretty
+markdown: kramdown
+
+sass:
+  sass_dir: assets/css
+  style: expanded
+
+defaults:
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+
+exclude:
+  - README.md

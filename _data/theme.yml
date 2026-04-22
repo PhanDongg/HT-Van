@@ -1,0 +1,13 @@
+colors:
+  brand: "#8f2d2d"
+  brand-soft: "#f9ede8"
+  ink: "#1f1f29"
+  line: "#e6ded7"
+  surface: "#ffffff"
+
+spacing:
+  xs: "0.5rem"
+  sm: "0.75rem"
+  md: "1rem"
+  lg: "1.5rem"
+  xl: "2rem"

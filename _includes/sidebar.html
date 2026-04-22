@@ -1,0 +1,14 @@
+<div class="sidebar">
+  {% include widgets/sidebar-search.html %}
+
+  <section class="sidebar-card">
+    <h2 class="sidebar-card__title">Trang mau</h2>
+    <ul class="sidebar-card__list">
+      {% for entry in site.data.pages.reference %}
+        <li class="sidebar-card__item">
+          <a class="sidebar-card__link" href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

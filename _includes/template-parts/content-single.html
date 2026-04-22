@@ -1,0 +1,11 @@
+<article class="content-block content-block--single">
+  <header class="content-block__header">
+    <h1 class="content-block__title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="content-block__meta">{{ page.description }}</p>
+    {% endif %}
+  </header>
+  <div class="content-block__body">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,8 @@
+<section class="sidebar-card">
+  <h2 class="sidebar-card__title">Danh muc san pham</h2>
+  <ul class="sidebar-card__list">
+    {% for item in site.data.products.categories %}
+      <li class="sidebar-card__item">{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>

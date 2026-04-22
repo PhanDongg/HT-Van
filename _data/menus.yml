@@ -1,0 +1,19 @@
+primary:
+  - title: Trang chu
+    url: /
+  - title: Bai giang
+    url: /bai-giang/
+  - title: Sach tham khao
+    url: /shop/
+  - title: Tin tuc
+    url: /tin-tuc/
+  - title: Van ban hanh chinh
+    url: /van-ban-hanh-chinh/
+
+footer:
+  - title: Ve chung toi
+    url: /gioi-thieu/
+  - title: Huong dan hoc tap
+    url: /huong-dan/
+  - title: Lien he
+    url: /lien-he/

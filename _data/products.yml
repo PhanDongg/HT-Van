@@ -1,0 +1,24 @@
+categories:
+  - De thi TS 10
+  - De on TN THPT
+  - Danh gia nang luc
+
+catalog:
+  - title: Huong dan on thi THPT
+    category: Sach tham khao
+    excerpt: Bo tai lieu mau de test component listing trong giai doan scaffold.
+    price: 120.000d
+    rating: 4.8/5
+    image_alt: Book cover placeholder
+  - title: Bai giang phan tich van hoc
+    category: Bai giang
+    excerpt: The hien card archive va single product.
+    price: 0d
+    rating: 4.9/5
+    image_alt: Lesson thumbnail placeholder
+  - title: De thi dinh ky
+    category: Tai lieu
+    excerpt: Du lieu mau cho khu vuc featured.
+    price: 49.000d
+    rating: 4.7/5
+    image_alt: Exam pack placeholder

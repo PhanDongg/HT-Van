@@ -1,0 +1,10 @@
+{% assign product = include.product %}
+<article class="product-card">
+  <p class="product-card__label">{{ product.category }}</p>
+  <h3 class="product-card__title">{{ product.title }}</h3>
+  <p class="product-card__excerpt">{{ product.excerpt }}</p>
+  <div class="product-card__meta">
+    {% include ecom/loop/price.html product=product %}
+    {% include ecom/loop/rating.html product=product %}
+  </div>
+</article>

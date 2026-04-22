@@ -1,0 +1,29 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'vi' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body class="page page-standard">
+    {% include header.html %}
+    <main class="l-page">
+      <div class="l-container {% if page.sidebar %}l-container--with-sidebar{% endif %}">
+        <div class="l-content">
+          {% include template-parts/content-page.html %}
+        </div>
+        {% if page.sidebar %}
+          <aside class="l-sidebar">
+            {% include sidebar.html %}
+          </aside>
+        {% endif %}
+      </div>
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

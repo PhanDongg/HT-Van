@@ -1,0 +1,25 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'vi' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body class="page page-404">
+    {% include header.html %}
+    <main class="l-page">
+      <div class="l-container">
+        <section class="empty-state">
+          <p class="empty-state__eyebrow">404</p>
+          <h1 class="empty-state__title">Khong tim thay trang</h1>
+          <p class="empty-state__text">Trang ban vua truy cap chua duoc tao hoac da thay doi duong dan.</p>
+          <a class="button button--primary" href="{{ '/' | relative_url }}">Quay ve trang chu</a>
+        </section>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

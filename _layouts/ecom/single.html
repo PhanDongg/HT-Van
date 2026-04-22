@@ -1,0 +1,34 @@
+---
+---
+<!doctype html>
+<html lang="{{ site.lang | default: 'vi' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body class="page page-product">
+    {% include header.html %}
+    {% assign product = site.data.products.catalog | first %}
+    <main class="l-page">
+      <div class="l-container">
+        <article class="product-detail">
+          <div class="product-detail__gallery">
+            {% include ecom/single/gallery.html product=product %}
+          </div>
+          <div class="product-detail__content">
+            <h1 class="product-detail__title">{{ product.title }}</h1>
+            {% include ecom/single/price.html product=product %}
+            {% include ecom/single/meta.html product=product %}
+            <div class="product-detail__body">
+              {{ content }}
+            </div>
+            {% include ecom/single/add-to-cart.html product=product %}
+          </div>
+        </article>
+      </div>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

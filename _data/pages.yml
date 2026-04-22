@@ -1,0 +1,21 @@
+home:
+  hero:
+    eyebrow: "HT Van"
+    title: "Scaffold trang chu theo Figma"
+    summary: "Bo khung nay dung de map layout, widget va include truoc khi code giao dien chi tiet."
+    primary:
+      label: "Bat dau"
+      url: "/"
+    secondary:
+      label: "Xem shop"
+      url: "/shop/"
+
+reference:
+  - title: Trang chu
+    url: /
+  - title: Shop
+    url: /shop/
+  - title: Gio hang
+    url: /cart/
+  - title: Thanh toan
+    url: /checkout/

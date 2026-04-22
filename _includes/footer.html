@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="site-footer__inner l-container">
+    <div>
+      <p class="site-footer__title">{{ site.title }}</p>
+      <p class="site-footer__text">{{ site.description }}</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      {% for item in site.data.menus.footer %}
+        <a class="site-footer__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</footer>
