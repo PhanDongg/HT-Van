@@ -1,0 +1,94 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.50);
+  background: var(--Linear, linear-gradient(90deg, rgba(241, 219, 255, 0.80) 0%, rgba(254, 245, 255, 0.80) 49.04%, rgba(246, 213, 255, 0.80) 100%));
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04);
+}
+
+.site-header__inner {
+  gap: 1.5rem;
+  min-height: 81px;
+  width: 1440px;
+}
+
+.site-header__logo {
+  width: 242px;
+  height: auto;
+}
+
+.site-header__actions {
+  gap: 0.5rem;
+}
+
+.site-nav {
+  gap: 32px;
+  min-width: 0;
+}
+
+.site-nav__link {
+  position: relative;
+  gap: 6px;
+  min-height: 42px;
+  color: #314158;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.site-nav__link.is-active {
+  color: var(--color-footer-bar);
+  border-bottom: 2px solid #8C1D1D;
+}
+
+.site-nav__icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.site-header__search {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--color-surface);
+  box-shadow: 0 4px 12px rgba(144, 161, 185, 0.2);
+}
+
+.site-header__search img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.site-header__auth {
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.site-header__auth--login {
+  background: var(--color-footer-bar);
+  color: var(--color-surface);
+  box-shadow: 0 10px 15px rgba(123, 21, 23, 0.18);
+}
+
+.site-header__auth--login img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.site-header__auth--register {
+  border-color: var(--color-footer-bar);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--color-footer-bar);
+}
+
+.site-header__auth--register img {
+  width: 1.25rem;
+  height: 1.25rem;
+}

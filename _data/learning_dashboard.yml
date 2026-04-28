@@ -1,0 +1,100 @@
+levels:
+  title: Cấp Học
+  icon: /assets/images/home/learning-dashboard/level-heading.svg
+  items:
+    - label: Tiểu học
+      url: /cap-hoc/tieu-hoc/
+      icon: /assets/images/home/learning-dashboard/elementary.svg
+    - label: THCS
+      url: /cap-hoc/thcs/
+      icon: /assets/images/home/learning-dashboard/middle-school.svg
+    - label: THPT
+      url: /cap-hoc/thpt/
+      icon: /assets/images/home/learning-dashboard/high-school.svg
+  chevron: /assets/images/home/learning-dashboard/chevron-down.svg
+
+book:
+  title: Sách tham khảo
+  image: /assets/images/home/learning-dashboard/book-cover.png
+  name: Hướng dẫn ôn thi tốt nghiệp THPT
+  meta: TÀI LIỆU ĐỘC QUYỀN
+  url: /shop/huong-dan-on-thi-tot-nghiep-thpt/
+  button: Xem tất cả
+  chevron: /assets/images/home/learning-dashboard/chevron-right.svg
+
+sidebar_ad:
+  image: /assets/images/home/learning-dashboard/sidebar-ad.png
+  alt: Cao Long Cảm xạ nhiệt
+
+hero:
+  title_line_1: Luyện thi
+  title_line_2: Tốt nghiệp THPT
+  description: Quyết tâm thi đỗ - Chinh phục ước mơ
+  primary_label: Bắt đầu học ngay
+  primary_url: /de-thi/tn-thpt/
+  secondary_label: Tìm hiểu thêm
+  secondary_url: /gioi-thieu/
+
+categories:
+  title: Danh mục quan trọng
+  icon: /assets/images/home/learning-dashboard/featured-news.svg
+  items:
+    - title: Ôn thi TS Lớp 10
+      description: Hệ thống hóa toàn bộ kiến thức, rèn luyện kỹ năng giải quyết các dạng đề bám sát ma trận đề thi.
+      url: /de-thi/ts-10/
+      icon: /assets/images/home/learning-dashboard/category-ts10.svg
+      tone: pink
+    - title: Luyện thi ĐGNL
+      description: Hệ thống kiến thức trọng tâm và kỹ năng làm bài thi chuyên cấp hiệu quả.
+      url: /de-thi/danh-gia-nang-luc/
+      icon: /assets/images/home/learning-dashboard/category-dgnl.svg
+      tone: violet
+    - title: Đề thi định kỳ
+      description: Cập nhật liên tục các bài kiểm tra, thi thử từ các trường chuyên và Sở GD&ĐT.
+      url: /de-thi/dinh-ky/
+      icon: /assets/images/home/learning-dashboard/category-exam.svg
+      tone: sky
+    - title: Sản phẩm học sinh
+      description: Tuyển tập những bài văn xuất sắc, bài viết mẫu đạt điểm cao từ cộng đồng.
+      url: /san-pham-hoc-sinh/
+      icon: /assets/images/home/learning-dashboard/category-student-products.svg
+      tone: orange
+
+advertisement:
+  label: Quảng cáo
+  title: Google AdSense
+  size: 300 × 250 • 300 × 600
+  image: /assets/images/home/learning-dashboard/advertisement.png
+featured_news:
+  title: Tin nổi bật
+  icon: /assets/images/home/learning-dashboard/featured-news.svg
+  items:
+    - title: Đề thi minh hoạ Tốt nghiệp THPT 2024 môn Ngữ văn
+      time: 2 GIỜ TRƯỚC
+      image: /assets/images/home/learning-dashboard/news-exam-sample.png
+      url: /tin-tuc/de-thi-minh-hoa-tot-nghiep-thpt-2024-mon-ngu-van/
+    - title: Hơn 100,000 thí sinh tham gia kỳ thi ĐGNL đợt 1
+      time: 5 GIỜ TRƯỚC
+      image: /assets/images/home/learning-dashboard/news-dgnl-students.png
+      url: /tin-tuc/hon-100000-thi-sinh-tham-gia-ky-thi-dgnl-dot-1/
+    - title: Cấu trúc đề thi tuyển sinh lớp 10 năm nay có gì mới?
+      time: 1 NGÀY TRƯỚC
+      image: /assets/images/home/learning-dashboard/news-class-10-structure.png
+      url: /tin-tuc/cau-truc-de-thi-tuyen-sinh-lop-10-nam-nay-co-gi-moi/
+
+stats:
+  title: Thống kê hệ thống
+  icon: /assets/images/home/learning-dashboard/stats.svg
+  items:
+    - label: Tổng số người dùng
+      value: 125,430
+      icon: /assets/images/home/learning-dashboard/total-users.svg
+      tone: amber
+    - label: Đang trực tuyến
+      value: 1,245
+      icon: /assets/images/home/learning-dashboard/online-users.svg
+      tone: purple
+
+quote:
+  image: /assets/images/home/learning-dashboard/quote-banner.png
+  alt: Mang cuộc sống vào bài học, đưa bài học vào cuộc sống

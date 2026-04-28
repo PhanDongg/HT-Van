@@ -1,0 +1,26 @@
+title: Bài viết được nhiều bạn đọc quan tâm
+view_all:
+  label: Xem tất cả
+  url: /tin-tuc/
+  icon: /assets/images/home/popular-posts/arrow-right.svg
+items:
+  - title: Cách làm bài nghị luận xã hội điểm cao
+    url: /tin-tuc/cach-lam-bai-nghi-luan-xa-hoi-diem-cao/
+    image: /assets/images/home/popular-posts/social-essay-high-score.png
+    excerpt: Bí quyết giúp bạn lấy trọn điểm phần nghị luận xã hội với các dẫn chứng sắc bén.
+    date: 12 THG 5, 2024
+  - title: Phân tích tâm lý nhân vật Tràng trong Vợ Nhặt
+    url: /tin-tuc/phan-tich-tam-ly-nhan-vat-trang/
+    image: /assets/images/home/popular-posts/character-trang-analysis.png
+    excerpt: Hiểu sâu về bối cảnh và diễn biến tâm lý nhân vật để bài phân tích sâu sắc hơn.
+    date: 12 THG 5, 2024
+  - title: Tổng hợp các biện pháp tu từ thường gặp
+    url: /tin-tuc/tong-hop-bien-phap-tu-tu/
+    image: /assets/images/home/popular-posts/rhetorical-devices.png
+    excerpt: Bí quyết giúp bạn lấy trọn điểm phần nghị luận xã hội với các dẫn chứng sáng rõ.
+    date: 12 THG 5, 2024
+  - title: Cách làm bài nghị luận xã hội điểm cao
+    url: /tin-tuc/cach-lam-bai-nghi-luan-xa-hoi-diem-cao-2/
+    image: /assets/images/home/popular-posts/social-essay-high-score-alt.png
+    excerpt: Bí quyết giúp bạn lấy trọn điểm phần nghị luận xã hội với các dẫn chứng sắc bén.
+    date: 12 THG 5, 2024

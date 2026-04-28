@@ -1,19 +1,23 @@
 primary:
-  - title: Trang chu
+  - title: Trang chủ
     url: /
-  - title: Bai giang
+  - title: Bài giảng
     url: /bai-giang/
-  - title: Sach tham khao
+    icon: /assets/images/header/nav-lectures.svg
+  - title: Sách tham khảo
     url: /shop/
-  - title: Tin tuc
+    icon: /assets/images/header/nav-books.svg
+  - title: Tin tức
     url: /tin-tuc/
-  - title: Van ban hanh chinh
+    icon: /assets/images/header/nav-news.svg
+  - title: Văn bản hành chính
     url: /van-ban-hanh-chinh/
+    icon: /assets/images/header/nav-documents.svg
 
 footer:
-  - title: Ve chung toi
+  - title: Về chúng tôi
     url: /gioi-thieu/
-  - title: Huong dan hoc tap
+  - title: Hướng dẫn học tập
     url: /huong-dan/
-  - title: Lien he
+  - title: Liên hệ
     url: /lien-he/

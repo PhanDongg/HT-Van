@@ -1,0 +1,50 @@
+brand:
+  mark: /assets/images/footer/logo-mark.svg
+  wordmark: /assets/images/footer/brand-wordmark.png
+  alt: HT Van
+  description: Nền tảng học tập Ngữ văn hiện đại, mang đến cách tiếp cận văn học đầy cảm hứng và sáng tạo cho học sinh mọi lứa tuổi.
+
+groups:
+  - title: Liên kết hữu ích
+    style: label
+    links:
+      - title: Về chúng tôi
+        url: /gioi-thieu/
+      - title: Hướng dẫn học tập
+        url: /huong-dan/
+      - title: Chính sách bảo mật
+        url: /chinh-sach-bao-mat/
+      - title: Liên hệ cộng tác
+        url: /lien-he/
+  - title: Cộng đồng
+    style: ui
+    links:
+      - title: Fanpage Facebook
+        url: "#"
+      - title: Group học tập
+        url: "#"
+      - title: Kênh YouTube
+        url: "#"
+
+social:
+  - label: Facebook
+    url: "#"
+    icon: /assets/images/footer/social-facebook.svg
+  - label: YouTube
+    url: "#"
+    icon: /assets/images/footer/social-youtube.svg
+  - label: TikTok
+    url: "#"
+    icon: /assets/images/footer/social-tiktok.svg
+  - label: Email
+    url: "#"
+    icon: /assets/images/footer/social-mail.svg
+
+newsletter:
+  title: Nhận tài liệu miễn phí mỗi tuần
+  placeholder: Nhập Email của bạn...
+  button: Đăng ký ngay
+
+bar:
+  copyright: © 2024 H.T VĂN.,
+  tagline: Học văn để hiểu mình, hiểu đời và viết nên tương lai

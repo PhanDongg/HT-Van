@@ -1,0 +1,27 @@
+{% assign popular_posts = site.data.popular_posts %}
+<section class="popular-posts l-container">
+  <header class="popular-posts__header d-flex align-items-center justify-content-between">
+    <h2 class="popular-posts__title section-heading m-0">{{ popular_posts.title }}</h2>
+    <a class="popular-posts__view-all d-inline-flex align-items-center text-nowrap" href="{{ popular_posts.view_all.url | relative_url }}">
+      <span>{{ popular_posts.view_all.label }}</span>
+      <img class="popular-posts__view-all-icon flex-shrink-0" src="{{ popular_posts.view_all.icon | relative_url }}" alt="" aria-hidden="true">
+    </a>
+  </header>
+
+  <div class="popular-posts__grid">
+    {% for post in popular_posts.items %}
+      <article class="popular-post-card overflow-hidden bg-white">
+        <a class="popular-post-card__media d-block overflow-hidden" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
+          <img class="popular-post-card__image w-100 object-fit-cover" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        </a>
+        <div class="popular-post-card__body p-3">
+          <h3 class="popular-post-card__title m-0">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <p class="popular-post-card__excerpt m-0 mt-3 overflow-hidden">{{ post.excerpt }}</p>
+          <time class="popular-post-card__date d-block mt-2 text-uppercase" datetime="2024-05-12">{{ post.date }}</time>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

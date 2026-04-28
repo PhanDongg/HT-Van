@@ -1,0 +1,26 @@
+title: Đề Thi
+description: Truy cập hàng ngàn bộ đề thi, bài văn mẫu được biên soạn sát với chương trình giáo dục phổ thông mới nhất.
+tabs:
+  - label: Đề thi TS 10
+    url: /de-thi/ts-10/
+  - label: Đề ôn TN THPT
+    url: /de-thi/tn-thpt/
+  - label: Đánh giá năng lực
+    url: /de-thi/danh-gia-nang-luc/
+cards:
+  - title: Soạn nhanh
+    description: Tóm tắt tác phẩm và dàn ý chi tiết chỉ trong 3 phút.
+    icon: /assets/images/home/exam-resources/quick-summary.svg
+    tone: orange
+  - title: Gợi ý văn hay
+    description: Công cụ hỗ trợ diễn đạt và làm giàu vốn từ ngữ.
+    icon: /assets/images/home/exam-resources/writing-suggestion.svg
+    tone: green
+  - title: Luyện viết
+    description: Thư viện mở bài và kết bài ấn tượng cho mọi chủ đề.
+    icon: /assets/images/home/exam-resources/writing-practice.svg
+    tone: blue
+  - title: Hỏi đáp 1:1
+    description: Hỗ trợ giải đáp thắc mắc bài tập văn học 24/7.
+    icon: /assets/images/home/exam-resources/qa.svg
+    tone: purple

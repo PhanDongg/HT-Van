@@ -1,3 +1,120 @@
-/* Placeholder for custom Bootstrap 4 build.
- * Giai doan scaffold chua nap source Bootstrap de giu project nhe va sach.
+/* Minimal Bootstrap-style utilities used by the theme.
+ * Keep this file before custom SCSS so component files can override details.
  */
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-pill {
+  border-radius: 999px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}

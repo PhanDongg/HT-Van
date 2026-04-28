@@ -1,0 +1,27 @@
+{% assign exam_resources = site.data.exam_resources %}
+<section class="exam-resources l-container overflow-hidden">
+  <div class="exam-resources__content d-flex flex-column">
+    <header class="exam-resources__header">
+      <h2 class="exam-resources__title section-heading m-0">{{ exam_resources.title }}</h2>
+      <p class="exam-resources__description m-0">{{ exam_resources.description }}</p>
+    </header>
+
+    <nav class="exam-resources__tabs d-flex flex-wrap" aria-label="Danh mục đề thi">
+      {% for tab in exam_resources.tabs %}
+        <a class="exam-resources__tab d-inline-flex align-items-center justify-content-center bg-white text-nowrap" href="{{ tab.url | relative_url }}">{{ tab.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="exam-resources__grid">
+      {% for card in exam_resources.cards %}
+        <article class="exam-resource-card exam-resource-card--{{ card.tone }} bg-white">
+          <div class="exam-resource-card__icon d-inline-flex align-items-center justify-content-center">
+            <img src="{{ card.icon | relative_url }}" alt="" aria-hidden="true">
+          </div>
+          <h3 class="exam-resource-card__title">{{ card.title }}</h3>
+          <p class="exam-resource-card__description">{{ card.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

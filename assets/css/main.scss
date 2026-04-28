@@ -1,5 +1,15 @@
+---
+---
+
 @import "vendors/bootstrap-custom";
 @import "base/variables";
 @import "base/reset";
 @import "layout/site";
+@import "layout/header";
+@import "layout/footer";
 @import "components/blocks";
+@import "components/headings";
+@import "components/learning-dashboard";
+@import "components/exam-resources";
+@import "components/popular-posts";
+@import "components/advertisement";

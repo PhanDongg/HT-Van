@@ -1,0 +1,123 @@
+{% assign learning_dashboard = site.data.learning_dashboard %}
+<section class="learning-dashboard l-container">
+  <aside class="learning-dashboard__sidebar d-flex flex-column" aria-label="Tài nguyên học tập">
+    <nav class="learning-dashboard__levels overflow-hidden bg-white" aria-label="{{ learning_dashboard.levels.title }}">
+      <h2 class="learning-dashboard__levels-title d-flex align-items-center m-0">
+        <img src="{{ learning_dashboard.levels.icon | relative_url }}" alt="" aria-hidden="true">
+        <span>{{ learning_dashboard.levels.title }}</span>
+      </h2>
+      <ul class="learning-dashboard__level-list list-unstyled m-0">
+        {% for level in learning_dashboard.levels.items %}
+          <li>
+            <a class="learning-dashboard__level-link d-flex align-items-center justify-content-between" href="{{ level.url | relative_url }}">
+              <span class="d-inline-flex align-items-center">
+                <img class="learning-dashboard__level-icon flex-shrink-0" src="{{ level.icon | relative_url }}" alt="" aria-hidden="true">
+                <span>{{ level.label }}</span>
+              </span>
+              <img class="learning-dashboard__level-chevron flex-shrink-0" src="{{ learning_dashboard.levels.chevron | relative_url }}" alt="" aria-hidden="true">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <article class="learning-dashboard__book bg-white">
+      <h2 class="learning-dashboard__panel-title m-0">{{ learning_dashboard.book.title }}</h2>
+      <a class="learning-dashboard__book-media d-flex align-items-center justify-content-center" href="{{ learning_dashboard.book.url | relative_url }}" aria-label="{{ learning_dashboard.book.name }}">
+        <img class="learning-dashboard__book-image" src="{{ learning_dashboard.book.image | relative_url }}" alt="{{ learning_dashboard.book.name }}">
+        <img class="learning-dashboard__book-chevron" src="{{ learning_dashboard.book.chevron | relative_url }}" alt="" aria-hidden="true">
+      </a>
+      <h3 class="learning-dashboard__book-name m-0">
+        <a href="{{ learning_dashboard.book.url | relative_url }}">{{ learning_dashboard.book.name }}</a>
+      </h3>
+      <p class="learning-dashboard__book-meta m-0">{{ learning_dashboard.book.meta }}</p>
+      <a class="learning-dashboard__book-button d-inline-flex align-items-center justify-content-center text-uppercase" href="{{ learning_dashboard.book.url | relative_url }}">{{ learning_dashboard.book.button }}</a>
+    </article>
+
+    <a class="learning-dashboard__sidebar-ad d-block overflow-hidden" href="/quang-cao/" aria-label="{{ learning_dashboard.sidebar_ad.alt }}">
+      <img class="w-100 object-fit-cover" src="{{ learning_dashboard.sidebar_ad.image | relative_url }}" alt="{{ learning_dashboard.sidebar_ad.alt }}">
+    </a>
+  </aside>
+
+  <div class="learning-dashboard__main d-flex flex-column">
+    <section class="learning-dashboard__hero overflow-hidden">
+      <div class="learning-dashboard__hero-content d-flex flex-column align-items-start">
+        <h2 class="learning-dashboard__hero-title m-0">
+          <span>{{ learning_dashboard.hero.title_line_1 }}</span>
+          <strong>{{ learning_dashboard.hero.title_line_2 }}</strong>
+        </h2>
+        <p class="learning-dashboard__hero-description m-0">{{ learning_dashboard.hero.description }}</p>
+        <div class="learning-dashboard__hero-actions d-flex align-items-center">
+          <a class="learning-dashboard__hero-button learning-dashboard__hero-button--primary d-inline-flex align-items-center justify-content-center" href="{{ learning_dashboard.hero.primary_url | relative_url }}">{{ learning_dashboard.hero.primary_label }}</a>
+          <a class="learning-dashboard__hero-button learning-dashboard__hero-button--secondary d-inline-flex align-items-center justify-content-center" href="{{ learning_dashboard.hero.secondary_url | relative_url }}">{{ learning_dashboard.hero.secondary_label }}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="learning-dashboard__categories" aria-labelledby="learning-dashboard-categories">
+      <h2 id="learning-dashboard-categories" class="learning-dashboard__section-title d-flex align-items-center m-0">
+        <img src="{{ learning_dashboard.categories.icon | relative_url }}" alt="" aria-hidden="true">
+        <span>{{ learning_dashboard.categories.title }}</span>
+      </h2>
+      <div class="learning-dashboard__category-grid">
+        {% for category in learning_dashboard.categories.items %}
+          <a class="learning-category learning-category--{{ category.tone }} bg-white overflow-hidden" href="{{ category.url | relative_url }}">
+            <span class="learning-category__mark d-inline-flex align-items-center justify-content-center">
+              <img src="{{ category.icon | relative_url }}" alt="" aria-hidden="true">
+            </span>
+            <span class="learning-category__title d-block">{{ category.title }}</span>
+            <span class="learning-category__description d-block">{{ category.description }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+
+  <aside class="learning-dashboard__right d-flex flex-column" aria-label="Tin nổi bật và thống kê">
+    <div class="learning-dashboard__ad-box d-flex flex-column align-items-center justify-content-center">
+      <img src="{{ learning_dashboard.advertisement.image | relative_url }}" alt="" aria-hidden="true">
+    </div>
+
+    <section class="learning-dashboard__featured" aria-labelledby="learning-dashboard-featured">
+      <h2 id="learning-dashboard-featured" class="learning-dashboard__section-title d-flex align-items-center m-0">
+        <img src="{{ learning_dashboard.featured_news.icon | relative_url }}" alt="" aria-hidden="true">
+        <span>{{ learning_dashboard.featured_news.title }}</span>
+      </h2>
+      <div class="learning-dashboard__news-list d-flex flex-column">
+        {% for item in learning_dashboard.featured_news.items %}
+          <a class="learning-news-item d-flex align-items-center bg-white" href="{{ item.url | relative_url }}">
+            <img class="learning-news-item__image flex-shrink-0 object-fit-cover" src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+            <span class="learning-news-item__body d-flex flex-column">
+              <span class="learning-news-item__title">{{ item.title }}</span>
+              <span class="learning-news-item__time text-uppercase">{{ item.time }}</span>
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="learning-dashboard__stats bg-white" aria-labelledby="learning-dashboard-stats">
+      <h2 id="learning-dashboard-stats" class="learning-dashboard__section-title d-flex align-items-center m-0">
+        <img src="{{ learning_dashboard.stats.icon | relative_url }}" alt="" aria-hidden="true">
+        <span>{{ learning_dashboard.stats.title }}</span>
+      </h2>
+      <div class="learning-dashboard__stats-list d-flex flex-column">
+        {% for stat in learning_dashboard.stats.items %}
+          <div class="learning-stat d-flex align-items-center">
+            <span class="learning-stat__icon learning-stat__icon--{{ stat.tone }} d-inline-flex align-items-center justify-content-center flex-shrink-0">
+              <img src="{{ stat.icon | relative_url }}" alt="" aria-hidden="true">
+            </span>
+            <span class="learning-stat__body d-flex flex-column">
+              <span class="learning-stat__label text-uppercase">{{ stat.label }}</span>
+              <strong class="learning-stat__value">{{ stat.value }}</strong>
+            </span>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <a class="learning-dashboard__quote d-block overflow-hidden" href="/gioi-thieu/" aria-label="{{ learning_dashboard.quote.alt }}">
+      <img class="w-100 object-fit-cover" src="{{ learning_dashboard.quote.image | relative_url }}" alt="{{ learning_dashboard.quote.alt }}">
+    </a>
+  </aside>
+</section>

@@ -1,11 +1,32 @@
 <header class="site-header">
-  <div class="site-header__inner l-container">
-    <a class="site-header__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <nav class="site-nav" aria-label="Main navigation">
+  <div class="site-header__inner l-container d-flex align-items-center justify-content-between">
+    <a class="site-header__brand d-inline-flex flex-shrink-0" href="{{ '/' | relative_url }}" aria-label="{{ site.title }}">
+      <img class="site-header__logo" src="{{ '/assets/images/footer/brand-wordmark.png' | relative_url }}" alt="{{ site.title }}">
+    </a>
+
+    <nav class="site-nav d-flex align-items-center justify-content-center flex-nowrap" aria-label="Main navigation">
       {% for item in site.data.menus.primary %}
-        <a class="site-nav__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        <a class="site-nav__link d-inline-flex align-items-center text-nowrap{% if page.url == item.url %} is-active{% endif %}" href="{{ item.url | relative_url }}">
+          {% if item.icon %}
+            <img class="site-nav__icon flex-shrink-0" src="{{ item.icon | relative_url }}" alt="" aria-hidden="true">
+          {% endif %}
+          <span>{{ item.title }}</span>
+        </a>
       {% endfor %}
     </nav>
-    <a class="button button--primary" href="{{ '/auth/login/' | relative_url }}">Dang nhap</a>
+
+    <div class="site-header__actions d-flex align-items-center flex-shrink-0">
+      <a class="site-header__search d-inline-flex align-items-center justify-content-center rounded-circle" href="{{ '/search/' | relative_url }}" aria-label="Tìm kiếm">
+        <img src="{{ '/assets/images/header/search.svg' | relative_url }}" alt="" aria-hidden="true">
+      </a>
+      <a class="site-header__auth site-header__auth--login d-inline-flex align-items-center justify-content-center rounded-pill text-nowrap" href="{{ '/auth/login/' | relative_url }}">
+        <img class="flex-shrink-0" src="{{ '/assets/images/header/login.svg' | relative_url }}" alt="" aria-hidden="true">
+        <span>Đăng nhập</span>
+      </a>
+      <a class="site-header__auth site-header__auth--register d-inline-flex align-items-center justify-content-center rounded-pill text-nowrap" href="{{ '/auth/register/' | relative_url }}">
+        <img class="flex-shrink-0" src="{{ '/assets/images/header/register.svg' | relative_url }}" alt="" aria-hidden="true">
+        <span>Đăng ký</span>
+      </a>
+    </div>
   </div>
 </header>

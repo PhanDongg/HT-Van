@@ -1,0 +1,133 @@
+.exam-resources {
+  margin-top: var(--space-2xl);
+  border-radius: 8px;
+  background-image: url("/assets/images/home/exam-resources/background.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.exam-resources__content {
+  gap: 1rem;
+  min-height: 398px;
+  padding: 44px 24px 48px;
+}
+
+.exam-resources__description {
+  margin-top: 0.25rem;
+  color: var(--color-footer-copy);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.exam-resources__tabs {
+  gap: 1rem;
+}
+
+.exam-resources__tab {
+  min-height: 34px;
+  padding: 8px 16px;
+  font-family: var(--font-subheading);
+  color: var(--color-footer-copy);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(222, 191, 188, 0.10);
+  background: #FFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.exam-resources__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px;
+  margin-top: 0.5rem;
+}
+
+.exam-resource-card {
+  min-height: 176px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.exam-resource-card--orange {
+  border: 1px solid rgba(254, 240, 138, 0.8);
+}
+
+.exam-resource-card--green {
+  border: 1px solid rgba(167, 243, 208, 0.8);
+}
+
+.exam-resource-card--blue {
+  border: 1px solid rgba(191, 219, 254, 0.8);
+}
+
+.exam-resource-card--purple {
+  border: 1px solid rgba(233, 213, 255, 0.8);
+}
+
+.exam-resource-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.exam-resource-card--orange .exam-resource-card__icon {
+  background: #FEF3C6;
+}
+
+.exam-resource-card--green .exam-resource-card__icon {
+  background: #D0FAE5;
+}
+
+.exam-resource-card--blue .exam-resource-card__icon {
+  background: #DBEAFE;
+}
+
+.exam-resource-card--purple .exam-resource-card__icon {
+  background: #F3E8FF;
+}
+
+.exam-resource-card__icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.exam-resource-card__title {
+  color: #0F172B;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.exam-resource-card__description {
+  color: #62748E;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.75px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .exam-resources__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .exam-resources__content {
+    padding: 32px 16px;
+  }
+
+  .exam-resources__grid {
+    grid-template-columns: 1fr;
+  }
+}

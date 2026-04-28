@@ -1,13 +1,53 @@
+{% assign footer = site.data.footer %}
 <footer class="site-footer">
-  <div class="site-footer__inner l-container">
-    <div>
-      <p class="site-footer__title">{{ site.title }}</p>
-      <p class="site-footer__text">{{ site.description }}</p>
+  <div class="site-footer__main l-container align-items-start">
+    <div class="site-footer__brand-column d-flex flex-column">
+      <a class="footer-brand d-flex align-items-start" href="{{ '/' | relative_url }}" aria-label="{{ footer.brand.alt }}">
+        <img class="footer-brand__wordmark w-100" src="{{ footer.brand.wordmark | relative_url }}" alt="{{ footer.brand.alt }}">
+      </a>
+      <p class="site-footer__description m-0">{{ footer.brand.description }}</p>
+      <div class="site-footer__social d-flex flex-wrap" aria-label="Mạng xã hội">
+        {% for item in footer.social %}
+          <a class="site-footer__social-link d-inline-flex align-items-center justify-content-center bg-transparent" href="{{ item.url }}" aria-label="{{ item.label }}">
+            <img class="site-footer__social-icon" src="{{ item.icon | relative_url }}" alt="" aria-hidden="true">
+          </a>
+        {% endfor %}
+      </div>
     </div>
-    <nav class="site-footer__nav" aria-label="Footer navigation">
-      {% for item in site.data.menus.footer %}
-        <a class="site-footer__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-      {% endfor %}
-    </nav>
+
+    {% for group in footer.groups %}
+      <nav class="site-footer__column d-flex flex-column" aria-label="{{ group.title }}">
+        <h2 class="site-footer__heading m-0">{{ group.title }}</h2>
+        <ul class="site-footer__list d-flex flex-column list-unstyled m-0 p-0">
+          {% for item in group.links %}
+            <li class="site-footer__list-item">
+              <a class="site-footer__link site-footer__link--{{ group.style }} text-uppercase" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    {% endfor %}
+
+    <section class="site-footer__newsletter" aria-labelledby="footer-newsletter-title">
+      <h2 class="site-footer__newsletter-title" id="footer-newsletter-title">{{ footer.newsletter.title }}</h2>
+      <form class="site-footer__newsletter-form d-flex flex-column" action="#" method="post">
+        <label class="u-visually-hidden" for="footer-newsletter-email">Email</label>
+        <input
+          id="footer-newsletter-email"
+          class="site-footer__newsletter-input w-100"
+          type="email"
+          name="email"
+          placeholder="{{ footer.newsletter.placeholder }}"
+        >
+        <button class="site-footer__newsletter-button border-0" type="submit">{{ footer.newsletter.button }}</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="site-footer__bar">
+    <div class="site-footer__bar-inner l-container d-flex align-items-center justify-content-between">
+      <p class="site-footer__meta site-footer__meta--copyright m-0 text-uppercase">{{ footer.bar.copyright }}</p>
+      <p class="site-footer__meta site-footer__meta--tagline m-0 text-capitalize">{{ footer.bar.tagline }}</p>
+    </div>
   </div>
 </footer>

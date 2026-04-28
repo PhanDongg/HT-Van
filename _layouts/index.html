@@ -2,28 +2,25 @@
 ---
 <!doctype html>
 <html lang="{{ site.lang | default: 'vi' }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  </head>
-  <body class="page page-home">
-    {% include header.html %}
-    <main class="l-page l-page--home">
-      <div class="l-container l-container--with-sidebar">
-        <div class="l-content">
-          {% include widgets/hero.html %}
-          {% include template-parts/content-page.html %}
-          {% include widgets/home-featured.html %}
-        </div>
-        <aside class="l-sidebar">
-          {% include sidebar.html %}
-        </aside>
-      </div>
-    </main>
-    {% include footer.html %}
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+
+<body class="page page-home">
+  {% include header.html %}
+  <main class="l-page--home homepage">
+    {% include widgets/learning-dashboard.html %}
+    {% include widgets/exam-resources.html %}
+    {% include widgets/popular-posts.html %}
+    {% include widgets/advertisement.html %}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+
 </html>
